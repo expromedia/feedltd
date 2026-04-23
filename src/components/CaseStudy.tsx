@@ -244,6 +244,7 @@ export function CaseStudy() {
               <div className="absolute bottom-4 left-6 text-xs text-gray-400 font-semibold">
                 {currentTestimonial + 1} / {testimonials.length}
               </div>
+
             </div>
           </div>
         </div>
