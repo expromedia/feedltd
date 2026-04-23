@@ -7,7 +7,7 @@ import {
 'lucide-react';
 export function Hero() {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-[90vh] flex items-center">
+    <section className="relative pt-20 pb-20 lg:pt-32 lg:pb-32 overflow-hidden min-h-[90vh] flex items-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
