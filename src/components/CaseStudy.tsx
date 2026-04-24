@@ -11,24 +11,10 @@ import {
 const testimonials = [
   {
     id: 1,
-    quote: "FEEDL's satellite technology provided us with the exact coordinates we needed. We drilled based on their data, and it resulted in successful commercial production at the Ogbama Field. It completely changed our exploration economics.",
-    author: "Platform Petroleum Limited",
-    role: "Operating Partner, Ogbama Field",
-    initials: "PP"
-  },
-  {
-    id: 2,
-    quote: "The precision and speed of FEEDL's remote sensing technology reduced our exploration timeline significantly. What used to take months now takes weeks, and the cost savings are substantial.",
-    author: "Oil & Gas Energy Corp",
-    role: "Exploration Manager",
-    initials: "OE"
-  },
-  {
-    id: 3,
-    quote: "We were skeptical about satellite-based exploration, but FEEDL proved its value. The data quality is exceptional, and their team's support throughout the process was outstanding.",
-    author: "Niger Delta Development",
-    role: "Chief Technical Officer",
-    initials: "ND"
+    quote: <>We, Platform Petroleum Limited, have the pleasure to confirm successful PoC using Future Exploration and Energy Development Limited/ BSD Global Exploration LLC) Proprietary Advanced Remote Sensing Technology. - <a href="/docs/testimonial-for-successful-proof-of-concept-poc.pdf" target="_blank" rel="noopener noreferrer" className="text-brand-gold underline">Click Here for Details.</a></>,
+    author: "Mr. John Anim",
+    role: "Managing Director/CEO - Platform Petroleum Limited",
+    initials: "JA"
   }
 ];
 
@@ -181,10 +167,9 @@ export function CaseStudy() {
                 className="absolute top-6 right-6 text-white/10"
                 size={48} />
               
-              {/* Testimonial Content with Fade Effect */}
               <div className={`transition-opacity duration-500 relative z-10 pr-12 ${fadeOut ? 'opacity-0' : 'opacity-100'}`}>
                 <p className="text-gray-300 italic mb-6 leading-relaxed">
-                  "{testimonials[currentTestimonial].quote}"
+                  {testimonials[currentTestimonial].quote}
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-brand-gold rounded-full flex items-center justify-center font-bold text-brand-dark text-xl flex-shrink-0">
