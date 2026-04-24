@@ -23,15 +23,17 @@ export function CaseStudy() {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setFadeOut(true);
-      setTimeout(() => {
-        setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-        setFadeOut(false);
-      }, 500);
-    }, 5000);
+    if (testimonials.length > 1) {
+      const interval = setInterval(() => {
+        setFadeOut(true);
+        setTimeout(() => {
+          setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+          setFadeOut(false);
+        }, 500);
+      }, 5000);
 
-    return () => clearInterval(interval);
+      return () => clearInterval(interval);
+    }
   }, []);
 
   const handleNext = () => {
